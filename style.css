@@ -1,0 +1,281 @@
+/*
+    =========================
+    FONDO GENERAL DE LA PAGINA
+    =========================
+
+    Se modifica el color del fondo
+    que aparece detrás del CV.
+
+    También se define:
+    - Tipo de letra
+    - Márgenes
+    - Espaciado exterior
+*/
+body{
+
+    /* Color de fondo gris claro */
+    background-color: #ececec;
+
+    /* Tipo de letra */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Elimina márgenes automáticos */
+    margin: 0;
+
+    /* Espacio alrededor de la página */
+    padding: 40px;
+}
+
+/*
+    =========================
+    CONTENEDOR PRINCIPAL DEL CV
+    =========================
+
+    Esta caja contiene todo el currículum.
+    Aquí se define:
+    - Tamaño
+    - Color
+    - Bordes
+    - Sombras
+*/
+.cv{
+
+    /* Ancho del CV */
+    width: 850px;
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Centra el CV en la página */
+    margin: auto;
+
+    /* Bordes redondeados */
+    border-radius: 15px;
+
+    /* Sombra alrededor */
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+
+    /* Permite mover elementos dentro */
+    position: relative;
+
+    /* Oculta elementos que sobresalen */
+    overflow: hidden;
+}
+
+/*
+    =========================
+    CONTENEDOR DE LA FOTO
+    =========================
+
+    Posiciona la imagen
+    en la esquina superior derecha.
+*/
+.foto{
+
+    position: absolute;
+
+    /* Distancia desde arriba */
+    top: 20px;
+
+    /* Distancia desde la derecha */
+    right: 30px;
+}
+
+/*
+    =========================
+    IMAGEN DE PERFIL
+    =========================
+
+    Aquí se modifica:
+    - Tamaño
+    - Bordes
+    - Forma
+    - Sombra
+*/
+.foto img{
+
+    /* Ancho de imagen */
+    width: 200px;
+
+    /* Alto de imagen */
+    height: 200px;
+
+    /* Ajusta la imagen sin deformarla */
+    object-fit: cover;
+
+    /* Bordes ligeramente redondeados */
+    border-radius: 10px;
+
+    /* Borde blanco */
+    border: 4px solid white;
+
+    /* Sombra alrededor de la imagen */
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+/*
+    =========================
+    ENCABEZADO SUPERIOR
+    =========================
+
+    Contiene:
+    - Nombre
+    - Carrera
+    - Descripción
+*/
+.encabezado{
+
+    /* Color morado */
+    background-color: #6a0dad;
+
+    /* Color del texto */
+    color: white;
+
+    /* Espaciado interno */
+    padding: 40px;
+
+    /*
+        Espacio extra del lado derecho
+        para que el texto no choque
+        con la imagen
+    */
+    padding-right: 260px;
+}
+
+/*
+    =========================
+    TITULO PRINCIPAL
+    =========================
+
+    Nombre del CV.
+*/
+.encabezado h1{
+
+    /* Elimina margen automático */
+    margin: 0;
+
+    /* Tamaño grande */
+    font-size: 50px;
+}
+
+/*
+    =========================
+    SUBTITULO
+    =========================
+
+    Carrera o profesión.
+*/
+.encabezado h2{
+
+    /* Espacio superior */
+    margin-top: 10px;
+
+    /* Color rosa claro */
+    color: #ffb6ff;
+
+    /* Tamaño del texto */
+    font-size: 26px;
+}
+
+/*
+    =========================
+    TEXTO DEL ENCABEZADO
+    =========================
+*/
+.encabezado p{
+
+    /* Separación superior */
+    margin-top: 15px;
+
+    /* Tamaño de texto */
+    font-size: 17px;
+}
+
+/*
+    =========================
+    CONTENIDO GENERAL
+    =========================
+
+    Contiene todas las secciones
+    del currículum.
+*/
+.contenido{
+
+    /* Espacio interno */
+    padding: 35px;
+}
+
+/*
+    =========================
+    SECCIONES
+    =========================
+
+    Da espacio entre cada apartado.
+*/
+section{
+
+    margin-bottom: 35px;
+}
+
+/*
+    =========================
+    TITULOS DE CADA SECCION
+    =========================
+*/
+h3{
+
+    /* Color morado */
+    color: #6a0dad;
+
+    /* Línea decorativa */
+    border-bottom: 2px solid #ff69b4;
+
+    /* Espacio interno inferior */
+    padding-bottom: 8px;
+
+    /* Separación inferior */
+    margin-bottom: 15px;
+
+    /* Tamaño */
+    font-size: 24px;
+}
+
+/*
+    =========================
+    PARRAFOS
+    =========================
+*/
+p{
+
+    /* Tamaño de letra */
+    font-size: 17px;
+
+    /* Espacio entre líneas */
+    line-height: 1.7;
+}
+
+/*
+    =========================
+    LISTAS
+    =========================
+
+    Espaciado interno izquierdo.
+*/
+ul{
+
+    padding-left: 20px;
+}
+
+/*
+    =========================
+    ELEMENTOS DE LISTA
+    =========================
+*/
+li{
+
+    /* Espacio entre elementos */
+    margin-bottom: 10px;
+
+    /* Tamaño de texto */
+    font-size: 17px;
+}
